@@ -141,7 +141,8 @@ async fn process_camo_request(
             let is_accepted = (settings.allow_audio && content_type.starts_with("audio/"))
                 || (settings.allow_image && content_type.starts_with("image/"))
                 || (settings.allow_json && content_type.starts_with("application/json"))
-                || (settings.allow_video && content_type.starts_with("video/"));
+                || (settings.allow_video && content_type.starts_with("video/"))
+                || settings.allow_all;
 
             if !is_accepted {
                 return Err(CamoError::ContentTypeNotAccepted(content_type));

@@ -42,6 +42,11 @@ impl LogLevel {
 #[derive(clap::Parser, Clone, Debug)]
 #[clap(about, author, version = env!("CAMO_RS_VERSION"))]
 pub struct Settings {
+
+    /// If present, all content types will be allowed
+    #[clap(long = "allow-all", env = "CAMO_ALLOW_ALL")]
+    pub allow_all: bool,
+
     /// If present, `audio/*` MIME types will be allowed
     #[clap(long = "allow-audio", env = "CAMO_ALLOW_AUDIO")]
     pub allow_audio: bool,

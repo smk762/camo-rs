@@ -15,7 +15,7 @@ https://camo.example.org/<digest>/<asset-url>
 Where
 
 - the `digest` is a 40-character hexadecimal-encoded SHA1 HMAC digest computed with the shared secret key,
-- the `asset-url` is a hexadecimal representation of the target URL, for example `687474703a2f2f65786d61706c652e636f6d2f6578616d706c652e6a7067` for `http://exmaple.com/example.jpg`.
+- the `asset-url` is a hexadecimal representation of the target URL, for example `687474703a2f2f65786d61706c652e636f6d2f6578616d706c652e6a7067` for `http://example.com/example.jpg`.
 
 ## Differences to the original project
 
